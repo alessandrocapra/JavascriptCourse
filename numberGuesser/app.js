@@ -17,13 +17,13 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 // if enter key is pressed, treat it as a click
-// guessInput.addEventListener('keyup', function(e){
-//   e.preventDefault();
-//
-//   if(e.keyCode === 13){
-//     document.querySelector('#guess-btn').click();
-//   }
-// });
+document.body.addEventListener('keyup', function(e){
+  e.preventDefault();
+
+  if(e.keyCode === 13){
+    document.querySelector('#guess-btn').click();
+  }
+});
 
 
 // Listen to click event on submit button
